@@ -1,0 +1,16 @@
+.sum-bar{
+  padding: 0 0 0 5px!important;
+  .col-33{
+    height: 100%;
+    color:#fff;
+    background-color: $energized;
+    span{
+      line-height: 34px;
+    }
+  }
+  .col-67{
+    i{
+      color: $energized;
+    }
+  }
+}

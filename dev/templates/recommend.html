@@ -1,0 +1,10 @@
+<ion-view view-title="农资超市" hide-tab="false"  hide-back-button="true">
+  <ion-nav-buttons side="secondary">
+    <button class="button button-icon icon ion-ios-search-strong" ng-click="search()"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="has-footer">
+    <carousel images="imgArr" click="click()"></carousel>
+  </ion-content>
+  <sum-bar has-tabs="1" show-cart="1" total="{{totalPrice}}" count="{{cartCount}}"></sum-bar>
+</ion-view>

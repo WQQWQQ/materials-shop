@@ -1,0 +1,119 @@
+// Base
+// -------------------------------
+
+@for $i from 12 to 21 {
+  .fs#{$i} {
+    @if $i%2==0 {
+      font-size: #{$i}px;
+    }
+  }
+}
+
+@for $i from 5 to 21 {
+  .mt#{$i} {
+    @if $i%5==0 {
+      margin-top: #{$i}px;
+    }
+  }
+  .mb#{$i} {
+    @if $i%5==0 {
+      margin-bottom: #{$i}px;
+    }
+  }
+  .ml#{$i} {
+    @if $i%5==0 {
+      margin-left: #{$i}px;
+    }
+  }
+  .mr#{$i} {
+    @if $i%5==0 {
+      margin-right: #{$i}px;
+    }
+  }
+  .pt#{$i} {
+    @if $i%5==0 {
+      padding-top: #{$i}px;
+    }
+  }
+  .pb#{$i} {
+    @if $i%5==0 {
+      padding-bottom: #{$i}px;
+    }
+  }
+  .pl#{$i} {
+    @if $i%5==0 {
+      padding-left: #{$i}px;
+    }
+  }
+  .pr#{$i} {
+    @if $i%5==0 {
+      padding-right: #{$i}px;
+    }
+  }
+}
+
+.tac{
+  text-align: center;
+}
+.tar{
+  text-align: right;
+}
+.inline-center{
+  display: inline-block;
+  vertical-align:middle;
+}
+.round-badge{
+  @extend .tac;
+  position: absolute!important;
+  z-index: 9;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  color:#fff;
+  top:-3px!important;
+  right: -3px!important;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.clear-fix {
+  overflow: auto;
+  _height: 1%;
+}
+
+.text-overflow-hidden {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.black-background {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .6);
+  position: absolute;
+  z-index: 9999;
+  img.close-img {
+    width: 30px;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+  }
+  img.poster-img {
+    @extend .absolute-center;
+    width: 70%;
+  }
+}
+
+
+

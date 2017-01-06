@@ -1,0 +1,31 @@
+// Button Mixins
+// --------------------------------------------------
+
+@mixin button-style($height:44px,$width:90%,$background-color:rgb(250,110,0),$border-width:0,$border-color:transparent,$color:#fff,$border-radius:5px){
+  text-align: center;
+  height: $height;
+  width: $width;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  border: $border-width solid $border-color;
+  span{
+    color:$color;
+    line-height: $height;
+  }
+}
+
+// Triangle Mixins
+// --------------------------------------------------
+
+@mixin triangle-style($border-width:10px,$border-color:rgb(250,110,0),$rotate-degree:45deg){
+  height: 0;
+  width: 0;
+  border-style: solid;
+  border-color: $border-color $border-color transparent transparent;
+  border-width: $border-width;
+  display: block;
+  transform: rotate($rotate-degree);
+  position: absolute;
+}
+
+

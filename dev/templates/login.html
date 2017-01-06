@@ -1,0 +1,22 @@
+<ion-view view-title="用户登录" hide-tab="true" hide-back-button="true" id="loginView">
+  <ion-content class="has-footer">
+    <div class="list md-datetime-display" mobiscroll-form="formSettings">
+      <label class="item item-input">
+        <span class="input-label">手机号</span>
+        <input type="text" placeholder="输入您的手机号">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">密码</span>
+        <input type="password" placeholder="输入您的密码">
+      </label>
+      <input id="demo-center"  mobiscroll-date="centerSettings" type="text" placeholder="Please Select..." />
+    </div>
+    <div class="padding-horizontal">
+      <button class="button button-block button-positive" ng-click="login()">登录</button>
+    </div>
+  </ion-content>
+  <sum-bar show-cart="0" has-tabs="false" cart-count="cartCount"></sum-bar>
+  <div class="bar bar-footer bar-light">
+    <a class="title" href="#/tab/edit-password">忘记密码?</a>
+  </div>
+</ion-view>

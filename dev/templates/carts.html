@@ -1,0 +1,19 @@
+<ion-view view-title="购物车"  hide-back-button="true" hide-tab="false">
+  <ion-content>
+    <ion-list>
+      <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="chat in chats" type="item-text-wrap" href="#/tab/chats/{{chat.id}}">
+        <img ng-src="{{chat.face}}">
+        <h2>{{chat.name}}</h2>
+        <p>{{chat.lastText}}</p>
+        <i class="icon ion-chevron-right icon-accessory"></i>
+
+        <ion-option-button class="button-assertive" ng-click="remove(chat)">
+          Delete
+        </ion-option-button>
+      </ion-item>
+      <button ng-click="addCart()">+</button>
+      <button ng-click="deleteCart()">-</button>
+    </ion-list>
+  </ion-content>
+  <sum-bar show-cart="1"  has-tabs="1" cart-count="cartCount"></sum-bar>
+</ion-view>
